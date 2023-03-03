@@ -1,0 +1,5 @@
+name: "user-web"
+port: 9021
+user_srv:
+  host: "172.20.10.2"
+  port: 5002
