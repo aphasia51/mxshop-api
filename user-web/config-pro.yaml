@@ -1,5 +1,7 @@
-name: "user-web"
-port: 9021
-user_srv:
-  host: "172.20.10.2"
-  port: 5002
+host: '172.20.10.2'
+port: 8848
+namespace: "817df357-e937-4ef1-bd43-1a2a3649e72b"
+user: "nacos"
+password: "nacos"
+dataid: "user-web.json"
+group: "pro"

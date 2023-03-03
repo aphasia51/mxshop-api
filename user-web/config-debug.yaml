@@ -1,23 +1,7 @@
-name: "user-web"
-port: 9021
-
-user_srv:
-  host: "172.20.10.2"
-  name: "user-srv"
-
-jwt:
-  key: 'L!Y%flLPCaMWc0CFJ$SFY4CK%&VYvsRe'
-
-sms:
-  key: 'LTAI5tKD59fXs2DrTsGSkpER'
-  secret: 'Dxu5yVZM0lLHsfiLPSLlhgI4oZ1d3B'
-  code: "SMS_271495229"
-
-redis:
-  host: '8.131.255.177'
-  port: 6390
-  expire: 300
-
-consul:
-  host: '172.20.10.2'
-  port: 8500
+host: '172.20.10.2'
+port: 8848
+namespace: "817df357-e937-4ef1-bd43-1a2a3649e72b"
+user: "nacos"
+password: "nacos"
+dataid: "user-web.json"
+group: "dev"

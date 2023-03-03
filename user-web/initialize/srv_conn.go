@@ -24,6 +24,7 @@ func InitSrvConn() {
 		grpc.WithInsecure(),
 		grpc.WithDefaultServiceConfig(`{"loadBalancePolicy": "round_robin"}`),
 	)
+
 	if err != nil {
 		zap.S().Fatal("[InitSrvConn] 连接 [用户服务失败]")
 	}
@@ -48,7 +49,7 @@ func InitSrvConn2() {
 	data, err := client.Agent().
 		ServicesWithFilter(fmt.Sprintf("Service == \"%s\"", global.ServerConfig.UserSrvInfo.Name))
 
-		// ServicesWithFilter(fmt.Sprintf(`Service == "%s"`, global.ServerConfig.UserSrvInfo.Name))
+	// ServicesWithFilter(fmt.Sprintf(`Service == "%s"`, global.ServerConfig.UserSrvInfo.Name))
 	if err != nil {
 		panic(err)
 	}
